@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link rel="stylesheet" href="css/style.css">
+        <title>G-Spot Hotel | Booking</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <link rel="icon" type="image/x-icon" href="img/Logo.png">
+        
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="container">
+              <a href="Index.html" class="logo">
+                <img src="img/Logo.png" alt="logo">
+                <h1>G-Spot<span> Hotel</span></h1>
+              </a>
+              <nav class="menu">
+                <ul>
+                  <li class="dropdown">
+                    <a href="Accommodation.html#accommodation" class="dropbtn">Accommodations</a>
+                    <div class="dropdown-content">
+                      <a href="Accommodation.html#standard">Standard Room</a>
+                      <a href="Accommodation.html#deluxe">Deluxe Room</a>
+                      <a href="Accommodation.html#executive">Executive Room</a>
+                      <a href="Accommodation.html#junior">Junior Suite</a>
+                      <a href="Accommodation.html#royal">Royal Suite</a>
+                    </div>
+                  </li>
+                    <li class="dropdown">
+                        <a href="Dining.html#dining" class="dropbtn">Dining</a>
+                        <div class="dropdown-content">
+                            <a href="Dining.html#restaurant">Restaurant</a>
+                            <a href="Dining.html#lobbylounge">Lobby Lounge</a>
+                            <a href="Dining.html#poolsidebar">Poolside Bar</a>
+                        </div>
+                    </li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="Booking.html" class="book-now">Book Now</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>     
+        <!-- End of Header -->
+
+        <!--Main-->
+        <br>
+        <br>
+        <br>    
+        <div class="booking-container">
+            <h1>Hotel Booking</h1>
+    
+            <div class="room-selection">
+                <h1>Select Room(s)</h1>
+                <div class="room-cards">
+
+                    <div class="room-option" onclick="toggleShadow(this)">
+                        <center><img src="img/Standard 1.jpg" alt="Standard Room"></center>
+                        <h2>Standard Room</h2>
+                        <h5>Thoughtfully designed for comfort and functionality, our Standard Room offers 
+                            a restful stay for solo travelers or couples. Each room features a choice of one queen-sized 
+                            bed or two twin-sized beds, a private bathroom, and essential furnishings including a desk, 
+                            chair, and nightstand. Guests can enjoy in-room conveniences such as air conditioning, complimentary 
+                            Wi-Fi, and a flat-screen television. Basic amenities including towels, toothbrushes, toothpaste, 
+                            and soap ensure a smooth and comfortable stay.</h5>
+                        <h4>PHP 1,000.00 /night</h4>
+                    </div>
+
+                    <div class="room-option" onclick="toggleShadow(this)">
+                        <center><img src="img/deluxe.png" alt="Deluxe Room"></center>
+                        <h2>Deluxe Room</h2>
+                        <h5>Our Deluxe Room provides a more spacious and refined environment, ideal for guests seeking enhanced comfort. 
+                            Appointed with premium furnishings, the room offers either a king-sized bed or two double beds, along with a 
+                            mini-fridge and generous storage. Located on higher floors for improved views, each Deluxe Room features 
+                            upgraded bath amenities including bathrobes, slippers, and premium toiletries. The tasteful interiors and 
+                            added space create a serene and elevated experience.</h5>
+                        <h4>PHP 2,500.00 /night</h4>
+                    </div>
+
+                    <div class="room-option" onclick="toggleShadow(this)">
+                        <center><img src="img/executive.jpeg" alt="Executive Room"></center>
+                        <h2>Executive Room</h2>
+                        <h5>Curated for the modern business traveler, the Executive Room combines productivity and comfort. Guests are granted 
+                            exclusive access to the Executive Lounge, offering complimentary snacks and beverages throughout the day. The room 
+                            features an ergonomic workspace, premium streaming services such as Netflix and HBO, and enhanced room service with 
+                            expedited check-in privileges. Additional benefits include complimentary ironing services and, in many cases, a 
+                            complimentary breakfast. Designed for efficiency, comfort, and sophistication.
+                        </h5>
+                        <h4>PHP 3,330.00 /night</h4>
+                    </div>
+
+                    <div class="room-option" onclick="toggleShadow(this)">
+                        <center><img src="img/Junior.jpg" alt="Junior Suite"></center>
+                        <h2>Junior Suite</h2>
+                        <h5>Elegant and expansive, our Junior Suite caters to families or guests desiring extra space. The suite features a separate 
+                            sitting or living area, a king-sized bed or two queen-sized beds, and a beautifully appointed layout with upgraded lighting 
+                            and décor. The spacious bathroom includes either a luxurious bathtub or a rain shower. Guests are welcomed with thoughtful 
+                            touches such as a fruit basket, chocolates, or complimentary drinks ideal for both relaxation and entertaining.</h5>
+                        <h4>PHP 4,400.00 /night</h4>
+                    </div>
+
+                    <div class="room-option" onclick="toggleShadow(this)">
+                        <center><img src="img/royal.jpg" alt="Royal Suite"></center>
+                        <h2>Royal Suite</h2>
+                        <h5>The epitome of luxury and exclusivity, the Presidential or Royal Suite is a haven for high-profile guests, dignitaries, 
+                            and VIPs. These signature accommodations include multiple distinct areas such as a master bedroom, an elegant living room, 
+                            a formal dining area, and often a private kitchen or bar. Each suite showcases exquisite furnishings, curated artwork, and 
+                            access to a private balcony or terrace with panoramic views. Personalized butler service, private concierge, VIP check-in, 
+                            and enhanced security features ensure the utmost discretion and care. Select suites may also include in-room spa facilities 
+                            or a Jacuzzi for the ultimate indulgence.</h5>
+                        <h4>PHP 5,500.00 /night</h4>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <div class="guest-info">
+                <h2>Guest Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="adult">Number of Adults:</label>
+                <input type="adult" id="adult" name="adult" required>
+                <label for="adult">Number of Children:</label>
+                <input type="adult" id="adult" name="adult" required>
+                <label for="addons">Anything else we should know about?</label>
+                <input type="addons" id="addons" name="addons" required>
+            </div>
+            <br>
+            <div class="calendar">
+                <h2>Check-in and Check-out</h2>
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin" name="checkin">
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout" name="checkout">
+            </div>
+            <br>
+            <center><a class="book-button" href="#confirmation">Confirm</a></center>
+    
+            <div id="confirmation" class="confirmation">
+                <h2>Booking Confirmation</h2>
+                <p>Your booking has been confirmed!</p>
+            </div>
+        </div>
+        <!--End of Main-->
+        <br>
+        <br>
+        <br>
+        <!--Footer-->
+        <footer id="footer">
+            <div class="footer-container">
+        
+                <div class="footer-logo">
+                    <a href="Index.html">
+                    <img src="img/Logo.png" alt="G-Spot Hotel Logo">
+                    </a>
+                </div>
+
+                    <p>Welcome to G-Spot Hotel, your budget-friendly sanctuary in the heart of the city, near Tagaytay. 
+                      Enjoy fantastic views where comfort meets convenience, all without the high price tag. Our clean and 
+                      spacious rooms are equipped with essential amenities, providing a welcoming atmosphere that is perfect 
+                      for both business and leisure travelers. With our unbeatable location and on-site services, your stay 
+                      is guaranteed to be both affordable and memorable.</p>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Accommodation.html#accommodation">Accommodation</a></li>
+                    <li><a href="Dining.html#dining">Dining</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Phone: +63 91234567</p>
+                    <p>Email: <a href="mailto:gsp0t@hotel.com">gsp0t@hotel.com</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com/cvsuimusofficial">
+                    <img src="img/Logo.png" alt="Facebook Icon" class="social-icon">
+                    </a>
+                </div>
+            </div>
+                <div class="footer-bottom">
+                <p>All Rights Reserved. &copy; 2025 G-Spot Hotel.</p>
+                </div>
+        </footer>
+        <!--End of Footer-->
+    </body>
+</html>
+<script>
+
+let selectedContainer = null;
+
+function toggleShadow(selectedOption) {
+    const options = document.querySelectorAll('.room-option');
+    
+    options.forEach(option => {
+        option.classList.remove('active');
+    });
+
+    selectedOption.classList.toggle('active');
+}
+
+</script>
